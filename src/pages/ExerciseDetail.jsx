@@ -11,6 +11,7 @@ const ExerciseDetail = () => {
   const [targetMuscleExercises, setTargetMuscleExercises] = useState([]);
   const [equipmentExercises, setEquipmentExercises] = useState([]);
   const { id } = useParams();
+  window.scrollTo({ top: 0, behavior: "smooth" });
 
   useEffect(() => {
     const fetchExerciseData = async () => {
